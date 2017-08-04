@@ -42,6 +42,7 @@ const style = StyleSheet.create({
     width: 300,
     justifyContent: 'center',
     marginTop: 30,
+    backgroundColor: 'pink',
   },
   content: {
     marginLeft: 20,
