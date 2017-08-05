@@ -9,7 +9,7 @@ class SignupComponent extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader onPress={this.props.handleBack} headerStyle={{ backgroundColor: 'transparent' }} iconstyle={{ fontSize: 38 }} iconname="ios-arrow-round-back" />
+        <CustomHeader onPress={this.props.handleBack} titleText='Create Account' headerStyle={{ backgroundColor: 'transparent' }} iconstyle={{ fontSize: 38 }} iconname="ios-arrow-round-back" />
         <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-around' }}>
           <ScrollView>
             <StatusBar backgroundColor={HEXCOLOR.PickledBluewood} barStyle="light-content" />

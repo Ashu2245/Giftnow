@@ -26,14 +26,14 @@ class LoginComponent extends Component {
                 <Input secureTextEntry style={style.inputStyle} value={this.props.password} onChangeText={(password) => { this.props.handlePassword(password); }} />
               </Item>
               <Button rounded style={style.button} onPress={() => { this.props.handleSubmit(); }} >
-                <Text style={style.buttonText}>Login</Text>
+                <Text style={style.buttonText}>Log In</Text>
               </Button>
             </Form>
           </View>
           <View style={{ marginTop: 19, paddingBottom: 10, justifyContent: 'center', flexDirection: 'row' }}>
             <Text style={{ marginTop: 12, color: 'grey', fontSize: 13 }}>Don't Have Account ?</Text>
             <Button transparent onPress={() => { this.props.handleSignup(); }}>
-              <Text style={{ color: 'white', alignSelf: 'center' }}>Signup</Text>
+              <Text style={{ color: 'white', alignSelf: 'center' }}>Sign Up</Text>
             </Button>
           </View>
         </View>

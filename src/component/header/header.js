@@ -9,7 +9,6 @@ export default class CustomHeader extends Component {
     return (
       <Header androidStatusBarColor={HEXCOLOR.PickledBluewood} style={this.props.headerStyle}>
         <Left>
-          {/* <Thumbnail small source={require('../../image/icon.png')} /> */}
           <Button transparent>
             <Icon
               style={this.props.iconstyle}
@@ -22,7 +21,7 @@ export default class CustomHeader extends Component {
         </Left>
         <Body>
           <Title>
-            <Text style={style.headerTitle}>Create Account</Text>
+            <Text style={style.headerTitle}>{this.props.titleText}</Text>
           </Title>
         </Body>
         <Right>
