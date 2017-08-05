@@ -1,14 +1,14 @@
 [
     {
-        "merged": "c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\xampp\\htdocs\\Giftnow\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "c:\\var\\www\\html\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "c:\\var\\www\\html\\Giftnow\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]
