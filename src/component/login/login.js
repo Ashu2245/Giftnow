@@ -32,7 +32,7 @@ class LoginComponent extends Component {
           </View>
           <View style={{ marginTop: 19, paddingBottom: 10, justifyContent: 'center', flexDirection: 'row' }}>
             <Text style={{ marginTop: 12, color: 'grey', fontSize: 13 }}>Don't Have Account ?</Text>
-            <Button transparent onPress={() => { }}>
+            <Button transparent onPress={() => { this.props.handleSignup(); }}>
               <Text style={{ color: 'white', alignSelf: 'center' }}>Signup</Text>
             </Button>
           </View>

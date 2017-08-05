@@ -14,6 +14,7 @@ class LoginContainer extends Component {
     };
     this.handleEmail = this.handleEmail.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
+    this.handleSignup = this.handleSignup.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleEmail(email) {
@@ -21,6 +22,9 @@ class LoginContainer extends Component {
   }
   handlePassword(password) {
     this.setState({ password });
+  }
+  handleSignup() {
+    this.props.navigation.navigate('Signup');
   }
   handleSubmit() {
     if (this.state.email !== '' && this.state.password !== '') {
@@ -47,6 +51,7 @@ class LoginContainer extends Component {
             handleEmail={this.handleEmail}
             handlePassword={this.handlePassword}
             handleSubmit={this.handleSubmit}
+            handleSignup={this.handleSignup}
           />
         </Image>
       </View>
