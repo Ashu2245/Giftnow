@@ -8,6 +8,7 @@ class LoginComponent extends Component {
   render() {
     return (
       <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-around' }}>
+        <StatusBar backgroundColor={HEXCOLOR.PickledBluewood} barStyle="light-content" />
         <View style={{ justifyContent: 'center' }}>
           <Image style={{ alignSelf: 'center', height: 95, width: 200, marginTop: 20 }} resizeMode="contain" source={require('../../image/icon.png')} />
         </View>
@@ -29,9 +30,12 @@ class LoginComponent extends Component {
               </Button>
             </Form>
           </View>
-          {/* <View> */}
-          <Text style={{ marginTop: 19, paddingBottom: 10, color: 'white', alignSelf: 'center' }}>Don't Have Account ? Signup</Text>
-          {/* </View> */}
+          <View style={{ marginTop: 19, paddingBottom: 10, justifyContent: 'center', flexDirection: 'row' }}>
+            <Text style={{ marginTop: 12, color: 'grey', fontSize: 13 }}>Don't Have Account ?</Text>
+            <Button transparent onPress={() => { }}>
+              <Text style={{ color: 'white', alignSelf: 'center' }}>Signup</Text>
+            </Button>
+          </View>
         </View>
       </View>
     );
