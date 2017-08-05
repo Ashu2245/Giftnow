@@ -18,6 +18,7 @@ const style = StyleSheet.create({
     color: HEXCOLOR.WhiteColor,
   },
   inputStyle: {
+    marginLeft:5,
     color: HEXCOLOR.WhiteColor,
   },
   buttonText: {

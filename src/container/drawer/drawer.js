@@ -8,7 +8,7 @@ const Home = DrawerNavigator({
   home: { screen: HomeComponent },
 },
 {
-  drawerWidth: 250,
+  drawerWidth: 300,
   drawerPosition: 'left',
   contentComponent: props => <DrawerContent {...props} />,
 });

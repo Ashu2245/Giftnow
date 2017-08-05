@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
 
-import SignupComponent from '../../component/signup/signupcomponent';
+import SignupComponent from '../../component/signup/signup';
 
 const { width } = Dimensions.get('window');
 
