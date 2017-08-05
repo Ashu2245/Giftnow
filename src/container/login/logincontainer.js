@@ -10,7 +10,7 @@ class LoginContainer extends Component {
     super();
     this.state = {
       email: '',
-      Password: '',
+      password: '',
     };
     this.handleEmail = this.handleEmail.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
