@@ -6,12 +6,12 @@
 
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import LoginContainer from './src/container/login/logincontainer';
+import App from './src/container/index';
 
 export default class GiftNow extends Component {
   render() {
     return (
-      <LoginContainer />
+      <App />
     );
   }
 }
