@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 import { Text } from 'native-base';
 import CustomHeader from '../header/header';
 
@@ -8,8 +8,11 @@ class HomeComponent extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader onPress={this.props.handleBack} />
+        <CustomHeader onPress={this.props.handleBack} headerStyle={{ backgroundColor: '#8E44AD' }} iconstyle={{ fontSize: 22 }} iconname="menu" />
         <Text>Info Page</Text>
+        <View style={{ justifyContent: 'center' }}>
+          <Image style={{ alignSelf: 'center', height: 95, width: 200, marginTop: 20 }} resizeMode="contain" source={require('../../image/icon.png')} />
+        </View>
       </View>
     );
   }

@@ -7,16 +7,16 @@ import { HEXCOLOR } from '../../style/hexcolor';
 export default class CustomHeader extends Component {
   render() {
     return (
-      <Header androidStatusBarColor={HEXCOLOR.PickledBluewood} style={style.headerColor}>
+      <Header androidStatusBarColor={HEXCOLOR.PickledBluewood} style={this.props.headerStyle}>
         <Left>
           {/* <Thumbnail small source={require('../../image/icon.png')} /> */}
           <Button transparent>
             <Icon
-              style={{ fontSize: 38 }}
+              style={this.props.iconstyle}
               onPress={() => {
                 this.props.onPress();
               }}
-              name="ios-arrow-round-back"
+              name={this.props.iconname}
             />
           </Button>
         </Left>

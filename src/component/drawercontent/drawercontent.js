@@ -6,9 +6,9 @@ import {
   View,
   Image,
 } from 'react-native';
-import { Button, Icon } from 'native-base';
+import { Button } from 'native-base';
 import { NavigationActions } from 'react-navigation';
-import FCM from 'react-native-fcm';
+
 
 const styles = {
   container: {
