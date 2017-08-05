@@ -1,5 +1,5 @@
 export const HEXCOLOR = {
-  PickledBluewood: '#34495e',
+  PickledBluewood: '#663399',
   BahamaBlue: '#01579b',
   CloudBurst: '#1e3750',
   WhiteColor: 'white',
