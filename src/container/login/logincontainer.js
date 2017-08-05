@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
-
+import { NavigationActions } from 'react-navigation';
 import LoginComponent from '../../component/login/login';
 
 const { width } = Dimensions.get('window');
@@ -27,15 +27,24 @@ class LoginContainer extends Component {
     this.props.navigation.navigate('Signup');
   }
   handleSubmit() {
-    if (this.state.email !== '' && this.state.password !== '') {
+    console.log('test');
+    if (this.state.email == 'ashu@gmail.com' && this.state.password == '123') {
       if (Platform.OS === 'ios') {
         AlertIOS('Welcome User');
       } else if (Platform.OS === 'android') {
-        ToastAndroid('Welcome User', ToastAndroid.SHORT, ToastAndroid.BOTTOM);
+        ToastAndroid.showWithGravity('welcome Ashutosh Pandey', ToastAndroid.SHORT, ToastAndroid.BOTTOM);
+        const resetAction = NavigationActions.reset({
+          index: 0,
+          actions: [
+            NavigationActions.navigate({ routeName: 'Drawer' }),
+          ],
+          key: 'Drawer',
+        });
+        this.props.navigation.dispatch(resetAction);
       }
     } else if (this.state.email === '' && this.state.password === '') {
       if (Platform.OS === 'android') {
-        ToastAndroid('Enter All Details', ToastAndroid.SHORT, ToastAndroid.BOTTOM);
+        ToastAndroid.showWithGravity('No User Found', ToastAndroid.SHORT, ToastAndroid.BOTTOM);
       } else if (Platform.OS === 'ios') {
         AlertIOS('Enter All Details');
       }
