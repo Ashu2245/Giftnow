@@ -1,0 +1,31 @@
+{
+  login:{
+    password:"123",
+    username:'john@gmail.com',
+  },
+  success:{
+    error:0,
+    message:"login successfull",
+    user:{
+    name:"john carten",
+    age:25,
+    address:"abc street xyz N.D-45",
+    pic:"",
+    email:'john@gmail.com',
+    info:{},
+    },
+  },
+  failed:{
+    error:1,
+    message:"login failed",
+    data:"Email or Password not match"
+  },
+  signoutSucess:{
+    error:0,
+    message:"Logout successfull",
+  },
+  signoutfailed:{
+    eror:1,
+    message:'somthing went wrong',
+  }
+}

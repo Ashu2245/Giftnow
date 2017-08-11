@@ -1,14 +1,18 @@
 [
     {
-        "merged": "c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.47.1\\res\\xml\\preferences.xml"
+        "merged": "/var/www/html/native/my/new/Giftnow/android/c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "/var/www/html/native/my/new/Giftnow/android/c:\\var\\www\\html\\native\\my\\Giftnow\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.47.1\\res\\xml\\preferences.xml"
     },
     {
-        "merged": "c:\\var\\www\\html\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "c:\\var\\www\\html\\Giftnow\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.47.1\\res\\xml\\preferences.xml"
+        "merged": "/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.1/res/xml/preferences.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "C:\\xampp\\htdocs\\Giftnow\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.47.1\\res\\xml\\preferences.xml"
+        "merged": "/var/www/html/native/my/new/Giftnow/android/c:\\var\\www\\html\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "/var/www/html/native/my/new/Giftnow/android/c:\\var\\www\\html\\Giftnow\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.47.1\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "/var/www/html/native/my/new/Giftnow/android/C:\\xampp\\htdocs\\Giftnow\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "/var/www/html/native/my/new/Giftnow/android/C:\\xampp\\htdocs\\Giftnow\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.47.1\\res\\xml\\preferences.xml"
     }
 ]

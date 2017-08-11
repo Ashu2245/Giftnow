@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
-
+import * as action from '../../action/action';
 import SignupComponent from '../../component/signup/signup';
 
 const { width } = Dimensions.get('window');
@@ -73,4 +74,13 @@ class SignupContainer extends Component {
   }
 }
 
-export default SignupContainer;
+function mapStateToProps(state) {
+  return {
+    user: state.users,
+  };
+}
+const mapDispatchToProps = dispatch => ({
+  onLogin: (emailId, password) => dispatch(action.userLoginRequest(emailId, password)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);
