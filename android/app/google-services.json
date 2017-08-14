@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "837766025504",
+    "firebase_url": "https://giftnow-e2cda.firebaseio.com",
+    "project_id": "giftnow-e2cda",
+    "storage_bucket": "giftnow-e2cda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837766025504:android:fb8f2609e0424bf4",
+        "android_client_info": {
+          "package_name": "com.giftnow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837766025504-upclvd5ere8ubaim1h7mv2nrtipvumg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.giftnow",
+            "certificate_hash": "353f0999630c04bee641af3d05ee66642366c18f"
+          }
+        },
+        {
+          "client_id": "837766025504-jlgj763sodf6bii1iputec6oveugjdpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmLKVxmq2CPsHYJpcSbyvl54fSTHkEsSQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837766025504-jlgj763sodf6bii1iputec6oveugjdpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
