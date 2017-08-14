@@ -18,7 +18,7 @@ class LoginComponent extends Component {
               <Item floatingLabel >
                 <Icon style={{ color: 'white' }} name="ios-person-outline" />
                 <Label style={{ marginLeft: 5, justifyContent: 'center', color: HEXCOLOR.WhiteColor }}> Email</Label>
-                <Input style={style.inputStyle} value={this.props.email} onChangeText={(email) => { this.props.handleEmail(email); }} />
+                <Input keyboardType="email-address" style={style.inputStyle} value={this.props.email} onChangeText={(email) => { this.props.handleEmail(email); }} />
               </Item>
               <Item floatingLabel >
                 <Icon name="ios-lock-outline" style={{ color: 'white' }} />
@@ -41,5 +41,4 @@ class LoginComponent extends Component {
     );
   }
 }
-
 export default LoginComponent;
