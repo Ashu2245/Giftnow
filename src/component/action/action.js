@@ -1,9 +1,12 @@
-// Login in HrReruit App
-export const USER_LOGIN_REQUEST = 'auth/login/request';
-export const USER_LOGIN_SUCCESS = 'auth/login/success';
-export const USER_LOGIN_FAILED = 'auth/login/failed';
+import { createAction } from 'redux-actions';
+import * as constants from './constant';
 
-// Signout From App
-export const USER_LOGOUT_REQUEST = 'auth/logout/request';
-export const USER_LOGOUT_SUCCESS = 'auth/logout/success';
-export const USER_LOGOUT_FAILED = 'auth/logout/failed';
+// Login Actions
+export const userLoginRequest = createAction(constants.USER_LOGIN_REQUEST);
+export const userLoginSuccess = createAction(constants.USER_LOGIN_SUCCESS);
+export const userLoginFailed = createAction(constants.USER_LOGIN_FAILED);
+
+// Signout Actions
+export const userLogoutRequest = createAction(constants.USER_LOGOUT_REQUEST);
+export const userLogoutSuccess = createAction(constants.USER_LOGOUT_SUCCESS);
+export const userLogoutFailed = createAction(constants.USER_LOGOUT_FAILED);
