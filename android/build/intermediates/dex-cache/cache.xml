@@ -3,192 +3,192 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_634c4cdd7f515c38b79a3e24f8ed79d6ccc5471e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.0.1_2f7deb67f11f1ce56729dbc0b19de25a32a7c1a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.0.1_235fe1b52beac1be5978cef28a3f476299bfaa13.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_3aefbbb5a59942fc04fb1c28c97e9baaa2fd92ca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.47.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="576b5113887747a7592650ae14d980e1c57983c4">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.47.1_9db5ca43f28ffa8332867c516f26d8c068c382ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_0260cd42e87d04c710a0e08a934fe78744449218.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.47.1\jars\libs\infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_592ae6a8d18bb484a288e20a29dc18283268815e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_dbda0cae4c3e068778830428cda110e3b850cf88.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_118c36dfe84f44cddaa8e04d0cedd7128022d91f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_d8fe9da937fe63d40702a0f5aeafae27f40b72f9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_da65f2dda51769b6c220f88545de57b86b15c2be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.0.1_37aca6e5ed82131b124e0c5034782c668f6b2643.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_2ae987403b4431e499a0d5ef502bbd589847b45b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_bcda1473dd29a27dd0b0e9aed85302d92f40302d.jar" />
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_219754a70430f9b699f929cf01e77cc1988b5bf5.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_7003bed0c0c3ff654035c707941f5ee1207cf742.jar" />
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_afa93895826da790d7b703711148436fcc082a9c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_18adb2843976e9c130ff634e06d947f03f314f65.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_506dc865119f460fe60b7eba6ddf7af6380d1072.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.0.1_ddc13b0a25f668fb6e982d64be4ade033c45f914.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\codea\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_0a4ee4c888ee82f342f6dbc3d2263d80e3723ee1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\xampp\htdocs\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jar="/var/www/html/native/implement/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_b8067a5186d4bafb65bbf519de25f7993e8501ef.jar" />
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_e9a66c89dcaf61a087564f720a9acba3dde69240.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_4c89dcdc547c3a8b6070e6f0417fb9bad45d66b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_f9e76b6274fb570bd7dc1fa25285fe3cf4bf5939.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_f5229197720e324eb517917cc5ddcc222349f9f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="576b5113887747a7592650ae14d980e1c57983c4">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.47.1_bd2af2e26be2435ac075582b6f73847f27f10a88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\xampp\htdocs\Giftnow\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_599ed8b1eff2735a9c46b390eed1b9df49a2df93.jar" />
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_bbba3b89cbe70af566fd41bba169f9592c918bf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_9d4b25518ee1e18f7d3046bc76f400a242d2d7d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_02eb215edb4ecd46c72d9bd35ce1475f59ef7757.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_d0ae45f9b11951b5a4737e4cf8b3487669013718.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_4f8b00834161e055830c7a88790d2d23b56f31ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_7b2ebc03ef127c0a5fc7b8f191e8ebab390a488c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_050593e3733e50bcb5d9c3c004504393178baf06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_3846f2b53840eac64c73ac75796657ce59757b09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_2e487f2b6f943a1696ff550dc70a89fc093eaa0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_56024f705d8621b5ef64b16064ab9ad2b2d796cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8ac4bddc5bea12ae109bea503538c057420699ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.1/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_9d2f4f7a2c4673e766732213cd606b24ed09cd4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_b9b1a8828ac88e63a9f085facff811bd9dc55957.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vishal/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_3249a54198b5865c05871c43d7a10d47f01efcb5.jar" />
     </item>
 
 </items>
