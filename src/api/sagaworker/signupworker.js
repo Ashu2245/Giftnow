@@ -6,9 +6,9 @@ export default function* createUserRequest(action) {
   try {
     const response = yield call(fireApi, action.payload);
     if (response.error === 0) {
-      yield put(actions.userLoginSuccess(response));
+      yield put(actions.userSignupSuccess(response));
     } else if (response.error === 1) {
-      yield put(actions.userLoginFailed(response));
+      yield put(actions.userSignupFailed(response));
     }
   } catch (e) {
     // handle error if any
