@@ -2,14 +2,14 @@ import * as firebase from 'firebase';
 import { firebaseApp, API_URL } from '../config/config';
 
 export function userRegister(email, password) {
-  return firebase.auth().createUserWithEmailAndPassword(email, password).catch((error) => {
+  return firebaseApp.auth().createUserWithEmailAndPassword(email, password).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     return (errorCode, errorMessage);
   });
 }
 export function userProfileupdate(userId, fname, lname, token, avatar) {
-  return firebase.database().ref(`/chatroom/userinfo/${userId}/profile`).update({
+  return firebaseApp.database().ref(`/data/userinfo/${userId}/profile`).update({
     firstname: fname,
     lastname: lname,
     cstoken: token,
@@ -17,24 +17,14 @@ export function userProfileupdate(userId, fname, lname, token, avatar) {
     avatar,
   });
 }
-export function userToken(data, fname, lname, token) {
+export function userToken(uid, name, lname, email, password) {
   const test = new Date().getTime();
-  return firebase.database().ref(`/userinfo/${data}/profile`).set({
-    firstname: fname,
-    lastname: lname,
-    cstoken: token,
-    id: data,
+  return firebaseApp.database().ref(`/data/profile/${uid}/profile`).set({
+    name,
+    email,
+    password,
+    id: uid,
     timestamp: test,
-  });
-}
-export function userTokenUpdate(userId, token) {
-  return firebase.database().ref(`/userinfo/${userId}/profile`).update({
-    cstoken: token,
-  });
-}
-export function userStatusUpdate(userId, key) {
-  return firebase.database().ref(`/data/${userId}/${key}/0/user`).update({
-    status: true,
   });
 }
 export function validateEmail(email) {
@@ -42,7 +32,7 @@ export function validateEmail(email) {
   return re.test(email);
 }
 export function userLogin(email, password) {
-  return firebase.auth().signInWithEmailAndPassword(email, password).catch((error) => {
+  return firebaseApp.auth().signInWithEmailAndPassword(email, password).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     return (errorCode, errorMessage);
@@ -50,14 +40,14 @@ export function userLogin(email, password) {
 }
 
 export function getSignOut() {
-  const test = firebase.auth().signOut().then(val => val).catch(error => error);
+  const test = firebaseApp.auth().signOut().then(val => val).catch(error => error);
   return test;
 }
 
 export function sendEmailVerification() {
-  return firebase.auth().currentUser.sendEmailVerification();
+  return firebaseApp.auth().currentUser.sendEmailVerification();
 }
 
 export function resetPassword(email) {
-  return firebase.auth().sendPasswordResetEmail(email);
+  return firebaseApp.auth().sendPasswordResetEmail(email);
 }

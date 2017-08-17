@@ -41,13 +41,15 @@ const userLogoutFailed = (state, action) => update(state, {
   signout: { $setRequestFailed: action.payload },
 });
 
-const userSignupSuccess = (state, action) => update(state, {
-  signup: { $setRequestSuccess: action.payload },
-});
+const userSignupSuccess = (state, action) =>
+  update(state, {
+    signup: { $setSignupRequestSuccess: action.payload },
+  });
 
-const userSignupFailed = (state, action) => update(state, {
-  signup: { $setRequestFailed: action.payload },
-});
+const userSignupFailed = (state, action) =>
+  update(state, {
+    signup: { $setSignupRequestFailed: action.payload },
+  });
 
 export default handleActions({
   [constants.USER_LOGIN_SUCCESS]: userLoginSuccess,

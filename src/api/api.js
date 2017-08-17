@@ -23,10 +23,8 @@ export function firebaseLogin(payload) {
   }
 }
 
-export function firebaseSignup(payload) {
+export async function firebaseSignup(payload) {
   if (payload.email !== '' && payload.password !== '') {
-    firebaseApp.auth().createUserWithEmailAndPassword(payload.email, payload.password).then((data) => {
-      console.log(data);
-    });
+    return firebaseApp.auth().createUserWithEmailAndPassword(payload.email, payload.password).catch(error => error);
   }
 }

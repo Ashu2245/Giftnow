@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
 import * as action from '../../action/action';
 import SignupComponent from '../../component/signup/signup';
-import { firebaseApp } from '../../config/config';
 
 const { width } = Dimensions.get('window');
 
@@ -22,6 +21,7 @@ class SignupContainer extends Component {
     this.handleName = this.handleName.bind(this);
     this.handleBack = this.handleBack.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleFirebaseSignup = this.handleFirebaseSignup.bind(this);
   }
   handleEmail(email) {
     this.setState({ email });
@@ -55,7 +55,7 @@ class SignupContainer extends Component {
   }
   handleFirebaseSignup() {
     if (this.state.email !== '' && this.state.password !== '') {
-
+      this.props.onSignup({ email: this.state.email, password: this.state.password });
     }
   }
   render() {
@@ -71,7 +71,7 @@ class SignupContainer extends Component {
             handleEmail={this.handleEmail}
             handlePassword={this.handlePassword}
             handleDob={this.handleDob}
-            handleSubmit={this.handleSubmit}
+            handleSubmit={this.handleFirebaseSignup}
             handleBack={this.handleBack}
           />
         </Image>

@@ -13,3 +13,17 @@ update.extend('$setRequestFailed', (payload, original) => update(original, {
   error: { $set: payload.data },
   isError: { $set: true },
 }));
+
+update.extend('$setSignupRequestSuccess', (payload, original) => update(original, {
+  data: { $set: payload },
+  isSuccess: { $set: true },
+  isError: { $set: false },
+  errors: { $set: [] },
+}));
+
+update.extend('$setSignupRequestFailed', (payload, original) => update(original, {
+  data: { $set: [] },
+  isSuccess: { $set: false },
+  error: { $set: payload },
+  isError: { $set: true },
+}));
