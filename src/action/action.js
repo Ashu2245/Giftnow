@@ -13,5 +13,5 @@ export const userLogoutFailed = createAction(constants.USER_LOGOUT_FAILED);
 
 // Signup Actions
 export const userSignupRequest = createAction(constants.USER_SIGNUP_REQUEST);
-export const userSignupRequest = createAction(constants.USER_SIGNUP_SUCCESS);
-export const userSignupRequest = createAction(constants.USER_SIGNUP_FAILED);
+export const userSignupSuccess = createAction(constants.USER_SIGNUP_SUCCESS);
+export const userSignupFailed = createAction(constants.USER_SIGNUP_FAILED);
