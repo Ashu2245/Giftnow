@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
+import { NavigationActions } from 'react-navigation';
+import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions, ActivityIndicator } from 'react-native';
 import * as action from '../../action/action';
 import SignupComponent from '../../component/signup/signup';
+import { userToken } from '../../api/firebaseApi';
 
 const { width } = Dimensions.get('window');
 
@@ -14,6 +16,7 @@ class SignupContainer extends Component {
       email: '',
       password: '',
       dob: '',
+      refreshing: false,
     };
     this.handleEmail = this.handleEmail.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
@@ -22,6 +25,20 @@ class SignupContainer extends Component {
     this.handleBack = this.handleBack.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleFirebaseSignup = this.handleFirebaseSignup.bind(this);
+  }
+  componentWillReceiveProps(props) {
+    if (props.user.signup.isSuccess) {
+      this.setState({ refreshing: false });
+      const result = userToken(props.user.signup.data.uid, this.state.name, this.state.email, this.state.password);
+      const resetAction = NavigationActions.reset({
+        index: 0,
+        actions: [
+          NavigationActions.navigate({ routeName: 'Drawer' }),
+        ],
+        key: 'Drawer',
+      });
+      this.props.navigation.dispatch(resetAction);
+    }
   }
   handleEmail(email) {
     this.setState({ email });
@@ -56,24 +73,32 @@ class SignupContainer extends Component {
   handleFirebaseSignup() {
     if (this.state.email !== '' && this.state.password !== '') {
       this.props.onSignup({ email: this.state.email, password: this.state.password });
+      this.setState({ refreshing: true });
     }
   }
   render() {
     return (
       <View style={{ flex: 1 }}>
         <Image style={{ width, flex: 1, borderColor: 'red' }} source={require('../../image/back.png')} >
-          <SignupComponent
-            name={this.state.name}
-            email={this.state.email}
-            password={this.state.password}
-            dob={this.state.dob}
-            handleName={this.handleName}
-            handleEmail={this.handleEmail}
-            handlePassword={this.handlePassword}
-            handleDob={this.handleDob}
-            handleSubmit={this.handleFirebaseSignup}
-            handleBack={this.handleBack}
-          />
+          {this.state.refreshing ?
+            <ActivityIndicator
+              animating={this.state.refreshing}
+              style={{ height: 80, alignItems: 'center', justifyContent: 'center' }}
+              size="large"
+            />
+            :
+            <SignupComponent
+              name={this.state.name}
+              email={this.state.email}
+              password={this.state.password}
+              dob={this.state.dob}
+              handleName={this.handleName}
+              handleEmail={this.handleEmail}
+              handlePassword={this.handlePassword}
+              handleDob={this.handleDob}
+              handleSubmit={this.handleFirebaseSignup}
+              handleBack={this.handleBack}
+            />}
         </Image>
       </View>
     );
