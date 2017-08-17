@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/var/www/html/Giftnow/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/var/www/html/Giftnow/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/var/www/html/native/my/new/Giftnow/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/var/www/html/native/my/new/Giftnow/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
