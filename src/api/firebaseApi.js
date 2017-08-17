@@ -17,7 +17,7 @@ export function userProfileupdate(userId, fname, lname, token, avatar) {
     avatar,
   });
 }
-export function userToken(uid, name, lname, email, password) {
+export function userToken(uid, name, email, password) {
   const test = new Date().getTime();
   return firebaseApp.database().ref(`/data/profile/${uid}/profile`).set({
     name,
