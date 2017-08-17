@@ -20,7 +20,7 @@ class LoginContainer extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   componentWillReceiveProps(props) {
-    if (props.user.userLogin.isSuccess) {
+    if (props.user.signup.isSuccess) {
       if (Platform.OS === 'ios') {
         AlertIOS('Welcome User');
       } else if (Platform.OS === 'android') {
@@ -56,13 +56,14 @@ class LoginContainer extends Component {
       this.props.onLogin({ email: this.state.email, password: this.state.password });
     } else if (this.state.email === '' && this.state.password === '') {
       if (Platform.OS === 'android') {
-        ToastAndroid.showWithGravity('No User Found', ToastAndroid.SHORT, ToastAndroid.BOTTOM);
+        ToastAndroid.showWithGravity('Enter Email & Password', ToastAndroid.SHORT, ToastAndroid.BOTTOM);
       } else if (Platform.OS === 'ios') {
         AlertIOS('Enter All Details');
       }
     }
   }
   render() {
+    console.log(this.props.user);
     return (
       <View style={{ flex: 1 }}>
         <Image style={{ width, flex: 1, borderColor: 'red' }} source={require('../../image/back.png')} >
