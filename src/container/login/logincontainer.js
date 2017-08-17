@@ -52,7 +52,6 @@ class LoginContainer extends Component {
     this.props.navigation.navigate('Signup');
   }
   handleSubmit() {
-    console.log('test');
     if (this.state.emaill !== '' && this.state.password !== '') {
       this.props.onLogin({ email: this.state.email, password: this.state.password });
     } else if (this.state.email === '' && this.state.password === '') {
@@ -64,7 +63,6 @@ class LoginContainer extends Component {
     }
   }
   render() {
-    console.log(this.props);
     return (
       <View style={{ flex: 1 }}>
         <Image style={{ width, flex: 1, borderColor: 'red' }} source={require('../../image/back.png')} >

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>837766025504-pgj63spr2cmblnb877v36235ck5abjae.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.837766025504-pgj63spr2cmblnb877v36235ck5abjae</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC94ZzPcEx1wg3HW35vB7h8RKzDw9sNdP0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>837766025504</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.giftnow</string>
+	<key>PROJECT_ID</key>
+	<string>giftnow-e2cda</string>
+	<key>STORAGE_BUCKET</key>
+	<string>giftnow-e2cda.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:837766025504:ios:fb8f2609e0424bf4</string>
+	<key>DATABASE_URL</key>
+	<string>https://giftnow-e2cda.firebaseio.com</string>
+</dict>
+</plist>

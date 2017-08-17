@@ -18,7 +18,7 @@ const style = StyleSheet.create({
     color: HEXCOLOR.WhiteColor,
   },
   inputStyle: {
-    marginLeft:5,
+    marginLeft: 5,
     color: HEXCOLOR.WhiteColor,
   },
   buttonText: {
@@ -44,6 +44,20 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 30,
     backgroundColor: '#f442b3',
+  },
+  googlebutton: {
+    alignSelf: 'center',
+    width: 300,
+    justifyContent: 'center',
+    marginTop: 30,
+    backgroundColor: '#2980b9',
+  },
+  facebookbutton: {
+    alignSelf: 'center',
+    width: 300,
+    justifyContent: 'center',
+    marginTop: 30,
+    backgroundColor: '#2980b9',
   },
   content: {
     marginLeft: 20,

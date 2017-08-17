@@ -21,6 +21,7 @@ class SignupContainer extends Component {
     this.handleName = this.handleName.bind(this);
     this.handleBack = this.handleBack.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleFirebaseSignup = this.handleFirebaseSignup.bind(this);
   }
   handleEmail(email) {
     this.setState({ email });
@@ -52,6 +53,11 @@ class SignupContainer extends Component {
       }
     }
   }
+  handleFirebaseSignup() {
+    if (this.state.email !== '' && this.state.password !== '') {
+      this.props.onSignup({ email: this.state.email, password: this.state.password });
+    }
+  }
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -65,7 +71,7 @@ class SignupContainer extends Component {
             handleEmail={this.handleEmail}
             handlePassword={this.handlePassword}
             handleDob={this.handleDob}
-            handleSubmit={this.handleSubmit}
+            handleSubmit={this.handleFirebaseSignup}
             handleBack={this.handleBack}
           />
         </Image>
@@ -80,7 +86,8 @@ function mapStateToProps(state) {
   };
 }
 const mapDispatchToProps = dispatch => ({
-  onLogin: (emailId, password) => dispatch(action.userLoginRequest(emailId, password)),
+  onSignup: (emailId, password) => dispatch(action.userSignupRequest(emailId, password)),
+
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);

@@ -1,4 +1,5 @@
 import * as data from '../sampleData/data.json';
+import { firebaseApp } from '../config/config';
 
 export function fireApi(payload) {
   if (payload.email === data.login.username && payload.password === data.login.password) {
@@ -12,4 +13,18 @@ export function signoutApi(payload) {
     return data.signoutSucess;
   }
   return data.signoutfailed;
+}
+
+export function firebaseLogin(payload) {
+  if (payload.email !== '' && payload.password !== '') {
+    firebaseApp.auth().signInWithEmailAndPassword(payload.email, payload.password).then((user) => {
+      console.log(user);
+    });
+  }
+}
+
+export async function firebaseSignup(payload) {
+  if (payload.email !== '' && payload.password !== '') {
+    return firebaseApp.auth().createUserWithEmailAndPassword(payload.email, payload.password).catch(error => error);
+  }
 }
