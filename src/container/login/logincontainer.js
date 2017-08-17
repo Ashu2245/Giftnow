@@ -4,6 +4,7 @@ import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react
 import { NavigationActions } from 'react-navigation';
 import * as action from '../../action/action';
 import LoginComponent from '../../component/login/login';
+import * as actions from '../../service/google';
 
 const { width } = Dimensions.get('window');
 
@@ -18,6 +19,7 @@ class LoginContainer extends Component {
     this.handlePassword = this.handlePassword.bind(this);
     this.handleSignup = this.handleSignup.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
   }
   componentWillReceiveProps(props) {
     if (props.user.userLogin.isSuccess) {
@@ -52,7 +54,6 @@ class LoginContainer extends Component {
     this.props.navigation.navigate('Signup');
   }
   handleSubmit() {
-    console.log('test');
     if (this.state.emaill !== '' && this.state.password !== '') {
       this.props.onLogin({ email: this.state.email, password: this.state.password });
     } else if (this.state.email === '' && this.state.password === '') {
@@ -63,8 +64,10 @@ class LoginContainer extends Component {
       }
     }
   }
+  handleGoogleLogin() {
+    actions.googleLogin((val) => { console.log(val); });
+  }
   render() {
-    console.log(this.props);
     return (
       <View style={{ flex: 1 }}>
         <Image style={{ width, flex: 1, borderColor: 'red' }} source={require('../../image/back.png')} >
@@ -75,6 +78,7 @@ class LoginContainer extends Component {
             handlePassword={this.handlePassword}
             handleSubmit={this.handleSubmit}
             handleSignup={this.handleSignup}
+            handleGoogleLogin={this.handleGoogleLogin}
           />
         </Image>
       </View>

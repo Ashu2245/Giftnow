@@ -42,6 +42,13 @@
             {
               "client_id": "837766025504-jlgj763sodf6bii1iputec6oveugjdpj.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "837766025504-pgj63spr2cmblnb877v36235ck5abjae.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.giftnow"
+              }
             }
           ]
         },
