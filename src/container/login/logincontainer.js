@@ -4,7 +4,6 @@ import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react
 import { NavigationActions } from 'react-navigation';
 import * as action from '../../action/action';
 import LoginComponent from '../../component/login/login';
-import * as actions from '../../service/google';
 
 const { width } = Dimensions.get('window');
 
@@ -19,7 +18,6 @@ class LoginContainer extends Component {
     this.handlePassword = this.handlePassword.bind(this);
     this.handleSignup = this.handleSignup.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
   }
   componentWillReceiveProps(props) {
     if (props.user.userLogin.isSuccess) {
@@ -64,9 +62,6 @@ class LoginContainer extends Component {
       }
     }
   }
-  handleGoogleLogin() {
-    actions.googleLogin((val) => { console.log(val); });
-  }
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -78,7 +73,6 @@ class LoginContainer extends Component {
             handlePassword={this.handlePassword}
             handleSubmit={this.handleSubmit}
             handleSignup={this.handleSignup}
-            handleGoogleLogin={this.handleGoogleLogin}
           />
         </Image>
       </View>

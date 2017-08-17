@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
 import * as action from '../../action/action';
 import SignupComponent from '../../component/signup/signup';
+import { firebaseApp } from '../../config/config';
 
 const { width } = Dimensions.get('window');
 
@@ -52,6 +53,11 @@ class SignupContainer extends Component {
       }
     }
   }
+  handleFirebaseSignup() {
+    if (this.state.email !== '' && this.state.password !== '') {
+
+    }
+  }
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -80,7 +86,8 @@ function mapStateToProps(state) {
   };
 }
 const mapDispatchToProps = dispatch => ({
-  onLogin: (emailId, password) => dispatch(action.userLoginRequest(emailId, password)),
+  onSignup: (emailId, password) => dispatch(action.userSignupRequest(emailId, password)),
+
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);
