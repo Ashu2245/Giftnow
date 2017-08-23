@@ -17,9 +17,7 @@ export function signoutApi(payload) {
 
 export function firebaseLogin(payload) {
   if (payload.email !== '' && payload.password !== '') {
-    firebaseApp.auth().signInWithEmailAndPassword(payload.email, payload.password).then((user) => {
-      console.log(user);
-    });
+    return firebaseApp.auth().signInWithEmailAndPassword(payload.email, payload.password).then(user => user);
   }
 }
 

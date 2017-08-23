@@ -49,8 +49,8 @@ class DrawerContent extends Component {
           <View style={{ marginTop: 10, flexDirection: 'row' }}>
             <Thumbnail style={{ marginTop: 10 }} source={{ uri: 'https://cdn2.iconfinder.com/data/icons/avatar-2/512/john_man_face-512.png' }} />
             <View style={{ marginLeft: 10, marginTop: 9, borderBottomWidth: 0.25, borderColor: 'grey', flex: 1 }} >
-              <Text style={{ fontSize: 25, color: 'black' }}>{this.props.user.userLogin.data.name}</Text>
-              <Text style={{ fontSize: 14.5, color: 'grey', marginBottom: 10 }}>{this.props.user.userLogin.data.email }</Text>
+              <Text style={{ fontSize: 25, color: 'black' }}>Ashutosh</Text>
+              <Text style={{ fontSize: 14.5, color: 'grey', marginBottom: 10 }}>Codeashu@gmail.com</Text>
             </View>
           </View>
           <View style={{ marginTop: 40, marginLeft: 3 }}>
