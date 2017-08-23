@@ -3,24 +3,24 @@ import { Container, Header, Tab, Tabs, Text } from 'native-base';
 import { ScrollableTabBar } from 'react-native-scrollable-tab-view';
 import { View } from 'react-native';
 import { HEXCOLOR } from '../../style/hexcolor';
+import AddDetails from '../form/adddetails';
 
 class TabsScrollableExample extends Component {
   render() {
     return (
       <Container>
         <Tabs
-          style={{ color: HEXCOLOR.WhiteColor }}
           renderTabBar={() => <ScrollableTabBar />}
         >
           <Tab
             tabStyle={{ backgroundColor: HEXCOLOR.FeijoaColor }}
             // activeTabStyle={{ backgroundColor: HEXCOLOR.BahamaBlue }}
-
+            textStyle={{ color: HEXCOLOR.WhiteColor }}
             activeTextStyle={{ color: HEXCOLOR.BahamaBlue }}
             tabBarUnderlineStyle={{ color: HEXCOLOR.FeijoaColor }}
             heading="Ashutosh"
           >
-            <Text>hello</Text>
+            <AddDetails />
           </Tab>
           <Tab
             // tabStyle={{ backgroundColor: HEXCOLOR.FeijoaColor }}
@@ -35,7 +35,7 @@ class TabsScrollableExample extends Component {
           <Tab
             // tabStyle={{ backgroundColor: HEXCOLOR.FeijoaColor }}
             // activeTabStyle={{ backgroundColor: HEXCOLOR.BahamaBlue }}
-            // textStyle={{ color: HEXCOLOR.WhiteColor }}
+            textStyle={{ color: HEXCOLOR.WhiteColor }}
             // activeTextStyle={{ color: HEXCOLOR.BahamaBlue }}
             // tabBarUnderlineStyle={{ color: HEXCOLOR.FeijoaColor }}
             heading="Ashish"
@@ -45,7 +45,7 @@ class TabsScrollableExample extends Component {
           <Tab
             // tabStyle={{ backgroundColor: HEXCOLOR.FeijoaColor }}
             // activeTabStyle={{ backgroundColor: HEXCOLOR.BahamaBlue }}
-            // textStyle={{ color: HEXCOLOR.WhiteColor }}
+            textStyle={{ color: HEXCOLOR.WhiteColor }}
             // activeTextStyle={{ color: HEXCOLOR.BahamaBlue }}
             // tabBarUnderlineStyle={{ color: HEXCOLOR.FeijoaColor }}
             heading="Shubham"
@@ -55,7 +55,7 @@ class TabsScrollableExample extends Component {
           <Tab
             // tabStyle={{ backgroundColor: HEXCOLOR.FeijoaColor }}
             // activeTabStyle={{ backgroundColor: HEXCOLOR.BahamaBlue }}
-            // textStyle={{ color: HEXCOLOR.WhiteColor }}
+            textStyle={{ color: HEXCOLOR.WhiteColor }}
             // activeTextStyle={{ color: HEXCOLOR.BahamaBlue }}
             // tabBarUnderlineStyle={{ color: HEXCOLOR.FeijoaColor }}
             heading="Faishal"
@@ -65,7 +65,7 @@ class TabsScrollableExample extends Component {
           <Tab
             // tabStyle={{ backgroundColor: HEXCOLOR.FeijoaColor }}
             // activeTabStyle={{ backgroundColor: HEXCOLOR.BahamaBlue }}
-            // textStyle={{ color: HEXCOLOR.WhiteColor }}
+            textStyle={{ color: HEXCOLOR.WhiteColor }}
             // activeTextStyle={{ color: HEXCOLOR.BahamaBlue }}
             // tabBarUnderlineStyle={{ color: HEXCOLOR.FeijoaColor }}
             heading="Manish"
