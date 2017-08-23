@@ -7,7 +7,7 @@ import { HEXCOLOR } from '../../style/hexcolor';
 export default class CustomHeader extends Component {
   render() {
     return (
-      <Header androidStatusBarColor={HEXCOLOR.PickledBluewood} style={this.props.headerStyle}>
+      <Header androidStatusBarColor={HEXCOLOR.CloudBurst} style={this.props.headerStyle}>
         <Left>
           <Button transparent>
             <Icon

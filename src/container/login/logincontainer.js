@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Image, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
+import { View, Image, AsyncStorage, ToastAndroid, AlertIOS, Platform, Dimensions } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import * as action from '../../action/action';
 import LoginComponent from '../../component/login/login';
@@ -13,14 +13,32 @@ class LoginContainer extends Component {
     this.state = {
       email: '',
       password: '',
+      refresh: false,
     };
     this.handleEmail = this.handleEmail.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
     this.handleSignup = this.handleSignup.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+  componentWillMount() {
+    this.setState({ refresh: true });
+    AsyncStorage.getItem('user', (err, result) => {
+      console.log(result);
+      if (result !== null) {
+        const user = JSON.parse(result);
+        if (user.email !== '' && user.password !== null) {
+          this.setState({ email: user.email, password: user.password });
+          this.props.onLogin({ email: user.email, password: user.password });
+        }
+      } else {
+        this.setState({ refresh: false });
+      }
+    });
+  }
   componentWillReceiveProps(props) {
     if (props.user.signup.isSuccess) {
+      AsyncStorage.setItem('user', JSON.stringify({ email: this.state.email, password: this.state.password }));
+      AsyncStorage.setItem('userdata', JSON.stringify({ data: props.user.signup.data }));
       if (Platform.OS === 'ios') {
         AlertIOS('Welcome User');
       } else if (Platform.OS === 'android') {
@@ -52,6 +70,7 @@ class LoginContainer extends Component {
     this.props.navigation.navigate('Signup');
   }
   handleSubmit() {
+    this.setState({ refresh: true });
     if (this.state.emaill !== '' && this.state.password !== '') {
       this.props.onLogin({ email: this.state.email, password: this.state.password });
     } else if (this.state.email === '' && this.state.password === '') {
@@ -63,11 +82,11 @@ class LoginContainer extends Component {
     }
   }
   render() {
-    console.log(this.props.user);
     return (
       <View style={{ flex: 1 }}>
         <Image style={{ width, flex: 1, borderColor: 'red' }} source={require('../../image/back.png')} >
           <LoginComponent
+            refresh={this.state.refresh}
             email={this.state.email}
             password={this.state.password}
             handleEmail={this.handleEmail}
